@@ -3,15 +3,12 @@
  * Dice Combination
  */
 import java.util.Scanner;
-
 public class SecondLoopPrac 
 {
-
 	public static void main(String[] args) 
 	{
 		DicePractice dice1 = new DicePractice();
 		DicePractice dice2 = new DicePractice();
-		
 		Scanner in = new Scanner(System.in);
 		boolean inputisgood = false;
 		int number;
@@ -27,7 +24,6 @@ public class SecondLoopPrac
 				
 					if (number <= 2 || number >= 12)
 						System.out.print("Invalid input. ");
-					
 					else
 					{
 						int roll1 = dice1.roll();
@@ -43,7 +39,6 @@ public class SecondLoopPrac
 							System.out.println("Dice Two rolled: " + roll2);
 							System.out.println("The sum of the two rolls is :" + sum);
 						}
-						
 						System.out.println("It took " + dice1.getNumRolls() + " rolls.");
 						System.out.println("YAY you got your number!");
 						
